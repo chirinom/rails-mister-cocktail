@@ -1,0 +1,12 @@
+<div class="wrapper">
+  
+  <div class="new-cocktail-container">
+    <h1>Create a new cocktail</h1>
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name, label: "Name your drink: ", placeholder: "Ron pintado.." %>
+      <%= f.submit class: 'btn btn-primary' %>
+      <%= link_to '<button class="btn btn-secondary">Back to Cocktails</button>'.html_safe, cocktails_path %>
+    <% end %>
+  </div>
+  
+</div>

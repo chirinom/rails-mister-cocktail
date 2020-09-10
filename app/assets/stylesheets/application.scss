@@ -8,12 +8,119 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 @import "components/banner";
 
+body {
+  background-color:#f8f9fa;
+}
+
+//index ---------------------------------------------------
+
+.row {
+  margin-top: 50px
+}
+
+.col {
+  margin-top: 30px
+}
+
+.btnbanner {
+  background-color: rgb(47, 139, 243);
+  width: 152px;
+  height: 45px;
+  border-radius: 25px;
+  margin-top:15px
+  
+}
+.container {
+  background-color: #f8f9fa;
+}
+
+.text {
+  width: 100vh;
+  margin-top: 170px
+}
+
+.text h1 {
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 25px;
+}
+
+.text h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+}
+
+.imagen {
+  object-fit: cover;
+  width:40%;
+  height: 520px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 35px;
+}
+
+//navbar--------------------------------------------------------
+
+//show-------------------------------------------------------
+.card-trip {
+  overflow: hidden;
+  background: #d2eefd;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 25px;
+}
+
+.wrapper {
+  margin: 0 300px;
+}
+
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.ingredients-title {
+  margin-top:20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.header {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.img-title > img {
+  height: 400px;
+  width: 100%;
+  background-size: auto;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.card-trip-infos {
+  margin-left: 40px;
+}
+
+//new-cocktail-------------------------------------------------------------
 .new-cocktail-container {
   width: 900px;
   height: 450px;
@@ -43,46 +150,20 @@
 }
 
 
-// --------------------------------------------------
-
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 25px;
-}
-
-.card-trip > img {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
-}
-
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
+// -------------------------------------------------
 
 
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
+// .card-trip .card-trip-infos {
+//   padding: 16px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   position: relative;
+// }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
+// .card-trip-infos .card-trip-user {
+//   position: absolute;
+//   right: 16px;
+//   top: -20px;
+//   width: 40px;
+// }

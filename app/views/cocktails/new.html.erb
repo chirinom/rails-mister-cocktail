@@ -1,7 +1,16 @@
 <div class="container">
+
+  <nav class="navbar sticky-top navbar-light bg-light">
+    <a class="navbar-brand" href="#"><i class="fas fa-cocktail fa-lg"></i></a>
+    <h6><a class="navbar-brand" href="#">Contact</a></h6>
+  </nav>
+
+  <div class="img-title">
+    <h1 class="header" >Create your cocktail</h1>
+    <img class="background-img" src="https://images.unsplash.com/photo-1574449126805-6f11acf5a8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+  </div>
   
-  <div class="new-cocktail-container">
-    <h1>Create a new cocktail</h1>
+  <div class="new-cocktail">
     <%= simple_form_for @cocktail do |f| %>
       <%= f.input :name, label: "Name your drink: ", placeholder: "Ron pintado.." %>
       <%= f.submit class: 'btnbanner' %>
@@ -10,4 +19,3 @@
   </div>
 
 </div>
-

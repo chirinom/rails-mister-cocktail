@@ -6,17 +6,15 @@
   </nav>
 
   <div class="img-title">
-    <h1 class="header">Select your ingredients!</h1>
-    <img class="background-img" src="https://images.unsplash.com/photo-1468072114808-903e572b8ead?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80" />
+    <h1 class="header-new">Select your ingredients!</h1>
+    <img class="background-img" src="https://images.unsplash.com/photo-1582391243626-34422931f463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
   </div>
 
   <%= simple_form_for [ @cocktail, @dose ] do |f| %>
-    <%= f.association :ingredient, label: "Add a new ingredient", placeholder: "Seco Herrerano..." %>
+    <%= f.input :ingredient, label: "Add a new ingredient", placeholder: "Seco Herrerano..." %>
     <%= f.input :description, label: "How much of it?..", placeholder: "1 Gal..." %>
-    <%= f.submit "Submit", class: 'btn btn-primary' %>
+    <%= f.submit "Submit", class: 'btnbanner' %>
     <%= link_to '<button class="btn btn-secondary">Back to Cocktails</button>'.html_safe, '/' %>
   <% end %>
 
 </div>
-
-

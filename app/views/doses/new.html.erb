@@ -11,7 +11,7 @@
   </div>
 
   <%= simple_form_for [ @cocktail, @dose ] do |f| %>
-    <%= f.input :ingredient, label: "Add a new ingredient", placeholder: "Seco Herrerano..." %>
+    <%= f.association :ingredient, label: "Add a new ingredient", placeholder: "Seco Herrerano..." %>
     <%= f.input :description, label: "How much of it?..", placeholder: "1 Gal..." %>
     <%= f.submit "Submit", class: 'btnbanner' %>
     <%= link_to '<button class="btn btn-secondary">Back to Cocktails</button>'.html_safe, '/' %>
